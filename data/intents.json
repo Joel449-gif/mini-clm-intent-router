@@ -1,0 +1,265 @@
+{
+  "_note": "Hand-written toy dataset. Each intent is an ACTION (4 paraphrases: first 3 used in training, 4th held out for evaluation) with 15 example customer messages (the STATE).",
+  "intents": [
+    {
+      "id": "refund",
+      "actions": [
+        "The customer wants a refund for a purchase",
+        "Request money back for an order",
+        "Customer asks to return an item and get reimbursed",
+        "Wants their payment refunded"
+      ],
+      "messages": [
+        "I'd like my money back for this order",
+        "Can I get a refund? The product isn't what I expected",
+        "Please refund my purchase from last week",
+        "How do I return this and get reimbursed?",
+        "I want to send this back and get my payment returned",
+        "The item doesn't work, I need a full refund",
+        "Refund request for order 48213",
+        "I changed my mind, can you give me a refund?",
+        "Where's my refund? I returned the parcel ten days ago",
+        "I want to return my shoes for a refund",
+        "Could you reverse the payment for my last order?",
+        "This isn't what was advertised, please refund me",
+        "I need my money returned, the service was poor",
+        "What's the process to get reimbursed for a faulty product?",
+        "I'm requesting a refund for the headphones I bought"
+      ]
+    },
+    {
+      "id": "track_order",
+      "actions": [
+        "The customer wants to know where their order is",
+        "Check the delivery status of a shipment",
+        "Customer asks for tracking information",
+        "Wants an update on when the package will arrive"
+      ],
+      "messages": [
+        "Where is my order?",
+        "Can you give me the tracking number for my package?",
+        "My parcel hasn't arrived yet, what's the status?",
+        "When will my delivery get here?",
+        "Track order 55231 please",
+        "It's been a week and I still haven't received my shipment",
+        "Is my package out for delivery today?",
+        "I'd like an update on my delivery",
+        "What is the estimated arrival date for my order?",
+        "The tracking page hasn't updated in three days",
+        "Has my order shipped yet?",
+        "Where is the courier right now with my package?",
+        "I ordered on Monday, when should I expect it?",
+        "Need the shipping status for my recent purchase",
+        "It says delivered but it isn't here, can you check where it is?"
+      ]
+    },
+    {
+      "id": "reset_password",
+      "actions": [
+        "The customer cannot log in and needs to reset their password",
+        "Help recovering account access",
+        "Customer forgot their password",
+        "Wants a link to create a new password"
+      ],
+      "messages": [
+        "I forgot my password",
+        "I can't log into my account",
+        "How do I reset my password?",
+        "The reset email never arrived",
+        "My login isn't working, it says incorrect password",
+        "Please send me a link to change my password",
+        "I'm locked out of my account",
+        "Can't sign in, I think I mistyped my password too many times",
+        "How can I recover access to my account?",
+        "I need to set a new password",
+        "The password reset link has expired",
+        "Unable to access my profile, I forgot my credentials",
+        "Help me get back into my account",
+        "My account is locked after several failed login attempts",
+        "I want to change my password because I can't remember it"
+      ]
+    },
+    {
+      "id": "cancel_subscription",
+      "actions": [
+        "The customer wants to cancel their subscription",
+        "Stop recurring membership payments",
+        "Customer asks to end their plan",
+        "Wants to unsubscribe from the service"
+      ],
+      "messages": [
+        "I want to cancel my subscription",
+        "Please stop my monthly plan",
+        "How do I unsubscribe?",
+        "Cancel my membership effective immediately",
+        "I no longer need the service, end my plan",
+        "Stop charging me every month, I want to cancel",
+        "Where can I cancel my premium account?",
+        "I'd like to end my subscription at the end of this billing cycle",
+        "Turn off auto-renewal on my plan",
+        "How do I terminate my membership?",
+        "Cancel the yearly plan please",
+        "I'm done with this service, please cancel everything",
+        "Can you close my subscription?",
+        "I don't want to be renewed next month",
+        "Please unsubscribe me from the paid tier"
+      ]
+    },
+    {
+      "id": "change_address",
+      "actions": [
+        "The customer wants to change their shipping or delivery address",
+        "Update the address on an order or account",
+        "Customer moved and needs a new address on file",
+        "Wants the package sent to a different location"
+      ],
+      "messages": [
+        "I need to change my delivery address",
+        "I moved, how do I update my address?",
+        "Please ship my order to a different address",
+        "I entered the wrong shipping address",
+        "Can you update the address on my account?",
+        "Send my parcel to my office instead",
+        "My new address is 12 Park Street, please update it",
+        "I made a typo in my postcode, can you fix it?",
+        "How do I edit the delivery location for order 33102?",
+        "Change my billing and shipping address to my new home",
+        "Redirect my package to my friend's place",
+        "The address on file is outdated",
+        "I'd like the delivery sent to another city",
+        "Can I modify where my order is shipped?",
+        "I relocated last month and need my details updated"
+      ]
+    },
+    {
+      "id": "report_damaged",
+      "actions": [
+        "The customer received a damaged or defective item",
+        "Report a broken product",
+        "Customer got the wrong or faulty goods",
+        "Item arrived in poor condition"
+      ],
+      "messages": [
+        "My package arrived damaged",
+        "The item I received is broken",
+        "The screen was cracked when I opened the box",
+        "I got the wrong product in my order",
+        "This arrived defective, it won't turn on",
+        "The box was crushed and the contents are ruined",
+        "Part of my order is missing",
+        "The product has a manufacturing defect",
+        "I received a faulty item and need help",
+        "The bottle leaked all over my parcel",
+        "The delivered item has scratches and dents",
+        "It stopped working after one day, it must be defective",
+        "I want to report a broken product I just received",
+        "The glass was shattered inside the packaging",
+        "They sent me the wrong size and it's torn"
+      ]
+    },
+    {
+      "id": "billing_dispute",
+      "actions": [
+        "The customer disputes a charge on their bill",
+        "Report an incorrect or duplicate payment",
+        "Customer was charged the wrong amount",
+        "Wants an unexpected charge explained or fixed"
+      ],
+      "messages": [
+        "I was charged twice for the same order",
+        "There's a charge on my card I don't recognize",
+        "Why was I billed more than the listed price?",
+        "My invoice shows the wrong amount",
+        "I see a duplicate payment on my statement",
+        "I was overcharged this month",
+        "Can you explain this unexpected fee on my bill?",
+        "I never authorized this charge on my account",
+        "The amount deducted doesn't match my receipt",
+        "I'm disputing a transaction from yesterday",
+        "My card was debited two times for one purchase",
+        "There's a mistake on my latest invoice",
+        "I noticed an extra charge, please look into it",
+        "Why did I get charged a late fee?",
+        "The discount wasn't applied and I paid full price"
+      ]
+    },
+    {
+      "id": "talk_to_human",
+      "actions": [
+        "The customer wants to speak with a human agent",
+        "Escalate the conversation to a real person",
+        "Customer asks for a live representative",
+        "Wants to be transferred to customer support staff"
+      ],
+      "messages": [
+        "Can I talk to a real person?",
+        "Connect me to a human agent",
+        "I want to speak to a manager",
+        "Transfer me to a live representative please",
+        "I don't want a bot, get me a person",
+        "Is there a phone number where I can reach someone?",
+        "Let me speak with customer service staff",
+        "Please escalate this to a human",
+        "I need to talk to someone who can actually help",
+        "Put me through to an agent",
+        "Can a support representative call me back?",
+        "I'd rather chat with a real employee",
+        "Get me a supervisor",
+        "Agent please",
+        "I need human assistance with my issue"
+      ]
+    },
+    {
+      "id": "update_payment_method",
+      "actions": [
+        "The customer wants to update their payment method",
+        "Change the card on file",
+        "Customer needs to add or replace a credit card",
+        "Wants to use a different way to pay"
+      ],
+      "messages": [
+        "I need to update my credit card",
+        "How do I change my payment method?",
+        "My card expired, can I add a new one?",
+        "Please replace the card on my account",
+        "I want to pay with PayPal instead of my card",
+        "Add a new debit card to my profile",
+        "Where do I edit my saved payment details?",
+        "I got a new card, how do I switch it over?",
+        "Remove my old card and use this one",
+        "Can I change how I pay for my subscription?",
+        "My bank issued a new card number, please update it",
+        "I'd like to use a different card for future orders",
+        "How do I add another payment option?",
+        "The card on file is no longer valid",
+        "Switch my billing to a different credit card"
+      ]
+    },
+    {
+      "id": "product_question",
+      "actions": [
+        "The customer asks a question about a product before buying",
+        "Check product availability, sizes or specifications",
+        "Customer wants details about an item they might purchase",
+        "Wants to know if something is in stock"
+      ],
+      "messages": [
+        "Is this jacket available in medium?",
+        "Does the laptop come with a charger?",
+        "When will the blue version be back in stock?",
+        "What are the dimensions of this desk?",
+        "Is this blender dishwasher safe?",
+        "Do you have this in black?",
+        "How long does the battery last on this model?",
+        "Is the phone compatible with 5G networks?",
+        "What material is this bag made of?",
+        "Does this come with a warranty?",
+        "Can you tell me the weight of this suitcase?",
+        "Is the red dress available in size 8?",
+        "Which colours does this watch come in?",
+        "Do you sell replacement filters for this purifier?",
+        "Are these headphones waterproof?"
+      ]
+    }
+  ]
+}
