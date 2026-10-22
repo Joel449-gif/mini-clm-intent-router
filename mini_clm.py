@@ -46,7 +46,7 @@ class MiniLMBackbone:
         from sentence_transformers import SentenceTransformer
 
         self.model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2", device="cpu")
-        self.dim = self.model.get_sentence_embedding_dimension()
+        self.dim = getattr(self.model, "get_embedding_dimension", self.model.get_sentence_embedding_dimension)()
 
     def fit(self, texts):  # frozen pretrained model, nothing to fit
         pass
